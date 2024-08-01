@@ -1,0 +1,54 @@
+/*!---HEADER---*/
+header {
+    background-color: white;
+    padding: 10px;
+    top: 0px;
+    border: 1px solid black;
+  
+    nav {
+      div{
+        a img {
+          height: 85px;
+          width: 100px;
+          margin-left: 15px;
+        }
+        .collapse {
+            ul.navbar-nav{
+            li.nav-item {
+              margin: 5px;
+              a.nav-link{
+                color: rgb(96, 86, 86);
+                transition: 1s;
+                font-size:$size-principal;
+                &:hover {
+                  color: $color-secundario;
+                }
+              }
+              .dropdown-menu{
+                li{
+                  a{
+                    color: rgb(96, 86, 86);
+                    transition:1s;
+                    &:hover {
+                      color:  $color-secundario;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          form.d-flex{
+            button.btn{
+                color: black;
+                border-color: $color-principal;
+                transition: 1s;
+                &:hover{
+                    background-color:$color-secundario;
+                } 
+            }
+          }
+        }
+      }
+    }
+  }
+  

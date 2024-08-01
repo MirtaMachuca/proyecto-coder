@@ -1,0 +1,425 @@
+
+@media screen and (max-width: 1200px) {
+    .redes{
+        display: block;
+        text-align: center;
+        div{
+            iframe{
+                width: 450px;
+            }
+        }
+    } 
+  
+    .destacados {
+      .destacados-cont {
+        div {
+          width: 353px;
+          height: 485px;
+          text-align: center;
+          margin: 10px 15px;
+  
+          img {
+            width: 349px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+          }
+        }
+      }
+    }
+  
+    .envios {
+      padding-bottom: 10px;
+  
+      .envios-cont {
+        div {
+          h3 {
+            font-size: ($font-size,3);
+          }
+        }
+      }
+    }
+  
+    .nosotros {
+      margin: 0;
+  
+      div {
+        margin: 0;
+      }
+    }
+  
+    .productos {
+      .content-prod {
+        @include flex(flex, center, space-evenly);
+        margin-top: 0;
+  
+        div {
+          width: 301px;
+          height: 500px;
+          margin: 15px 10px;
+  
+          img {
+            width: 300px;
+          }
+  
+          a {
+            img {
+              width: 20px;
+              height: 20px;
+              margin: 10px 8px;
+            }
+          }
+  
+          h3,
+          p {
+            font-size: npm($font-size,2);
+            color: white;
+            font-weight: 400;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  
+    .nosotros {
+      @include flex(flex, center, center);
+      flex-direction: column-reverse;
+  
+      img {
+        margin-bottom: 30px;
+      }
+  
+      div {
+        width: 100%;
+        text-align: justify;
+      }
+    }
+   
+}
+  
+
+@media screen and (max-width:972px){
+    header {
+        nav.navbar{
+            div.container-fluid{
+                a{
+                    img{
+                        height: 55px;
+                        width: 60px;
+                    }
+                }
+            }
+        }
+          
+    }
+    .redes{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        div{
+            margin:10px 0px ;
+            iframe{
+                width: 500px !important;
+            }
+        }
+    } 
+    
+
+    .new-in{
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);       
+            .primer-img{
+                grid-row-start: 1; 
+                grid-row-end: 2; 
+            }
+            .segunda-img,.tercer-img, .octava-img{
+                grid-column-start: 2; 
+                grid-column-end: 4; 
+            }
+        
+            .quinta-img{
+                grid-column-start: 1; 
+                grid-column-end: 2; 
+            }
+
+        
+            .sexta-img{
+                grid-row-start: 2; 
+                grid-row-end: 3; 
+            }
+
+            .septima-img{
+                grid-row-start: 3; 
+                grid-row-end: 4; 
+            }
+
+            
+        }
+    }
+
+}
+
+@media screen and (max-width:840px){
+
+    .productos{
+        .content-prod {
+            display: flex;
+            align-items: center; 
+            justify-content: space-evenly;
+            margin-top: 0px;
+            div{
+                width: 203px;
+                margin: 10px 7px;
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+    .primer-img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .septima-img{
+        grid-row-start: 3; 
+        grid-row-end: 4; 
+    }
+
+    .quinta-img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .octava-img{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .content-grid{
+        margin-top: 50px;
+    }
+   
+}
+@media screen and (max-width:764px){
+
+    .hero{
+        div.carousel{
+            div.carousel-inner{
+                div.carousel-item{
+                    img{
+                        height: 45%;
+                    }
+                }
+            }
+        }
+    }
+    h2.subtitulo{
+        font-size: npm($font-size,3);
+    }
+
+    .productos{
+        .content-prod {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: nowrap;
+            margin-top: 0px;
+            div{
+                width: 200px;
+                img{
+                    width: 203px;
+                }
+            }
+        }
+    }
+    .destacados{
+        div.destacados-cont{
+            div{
+                width: 550px;
+                margin: 15px;
+                img{
+                    width: 550px;
+                    @include flex(flex,center,center);
+                }
+                a{
+                    font-size: npm($font-size,3);
+                }
+            }
+        }
+    }
+    .envios{
+        .envios-cont{
+            display: block; 
+            margin: 20px 0px;
+            div{
+                width: 100%; 
+                height: auto; 
+                text-align: center;
+                margin: 25px 0; 
+            }
+        }
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px; 
+    }
+    .grid-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .primer-img,.sexta-img{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    
+   .septima-img,.octava-img{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .cuarta-img,.segunda-img{
+        grid-column-start: 3; 
+        grid-column-end: 4; 
+    }
+ 
+}
+
+
+@media screen and (max-width:658px){
+    h2.sbtitulo{
+        font-size: npm($font-size,4);
+        padding: 10px 20px;
+    }
+    .redes{
+        div{
+            iframe{
+                width: 350px !important;
+            }
+        }
+    }
+
+    .destacados{
+        div.destacados-cont{
+            div{
+                width: 303px;
+                height: auto;
+                padding-bottom: 15px;
+                img{
+                    width: 300px;
+                }
+                h3{
+                    font-size:npm($font-size,5);
+                }
+                a{
+                    padding: 7px;
+                    font-size: npm($font-size,3);
+                }
+            }
+        }
+    }
+   
+
+    .fixed{
+       display: none;
+    }
+
+    .formulario{
+        form{
+            div.form-buttons{
+                input{
+                    width: 120px;
+                    font-size: npm($font-size,3);
+                    padding: 7px;
+                }
+            }
+        }
+    }
+    .nosotros {
+        img {
+             width: 300px;
+        }
+    }
+
+    .content-grid{
+        @include flex(flex,center,center);
+        flex-wrap: wrap;
+    }
+
+
+    .new-in{
+        .content-grid{
+            div{
+                img{
+                    width: 430px; 
+                }
+            }
+        }
+    }
+   
+}
+
+
+@media screen and (max-width:480px){
+
+
+    .new-in{
+        .content-grid{
+            div{
+                img{
+                    width: 430px; 
+                }
+            }
+        }
+    }
+    .redes{
+        div{
+            iframe{
+                width: 300px !important;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width:376px){
+
+   
+    .destacado{
+        .destacados-cont{
+            div{
+                width: 300px;
+                height: 410px;
+                img{
+                    width: 296px;
+                }
+                h3{
+                    font-size:npm($font-size,2);
+                }
+                a{
+                    padding: 7px;
+                    font-size: 1npm($font-size,1); 
+                }
+            }
+        }
+    }
+    .envios{
+        .envios-cont{
+            padding: 0px;
+        }
+    }
+  
+    .new-in{
+        .content-grid{
+            margin: 10px;
+            div{
+                img{
+                    width: 280px;
+                }
+            }
+        }
+    }
+ 
+}
