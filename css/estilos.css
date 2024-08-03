@@ -66,7 +66,7 @@ header nav div .collapse form.d-flex button.btn:hover {
 }
 .hero div.carousel div.carousel-item div.carousel-caption h1 {
   color: black;
-  font-size: npm(14px, 18px, 20px, 23px, 25px, 5);
+  font-size: 23px;
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -91,7 +91,7 @@ header nav div .collapse form.d-flex button.btn:hover {
   align-items: center;
 }
 .destacados div.destacados-cont div h3 {
-  font-size: npm(14px, 18px, 20px, 23px, 25px, 5);
+  font-size: 25px;
   color: pink;
   text-align: center;
   background-color: black;
@@ -99,7 +99,7 @@ header nav div .collapse form.d-flex button.btn:hover {
 }
 .destacados div.destacados-cont div a {
   text-decoration: none;
-  font-size: npm(14px, 18px, 20px, 23px, 25px, 2);
+  font-size: 18px;
   padding: 10px;
   background-color: rgb(240, 48, 141);
   color: white;
@@ -130,14 +130,14 @@ header nav div .collapse form.d-flex button.btn:hover {
 }
 .envios .envios-cont div h3 {
   margin: 10px 0px;
-  font-size: npm(14px, 18px, 20px, 23px, 25px, 2);
+  font-size: 18px;
 }
 .envios .envios-cont div img {
   width: 50px;
   height: 50px;
 }
 .envios .envios-cont div p {
-  font-size: npm(14px, 18px, 20px, 23px, 25px, 1);
+  font-size: 14px;
   color: rgb(53, 46, 46);
 }
 
@@ -210,7 +210,7 @@ div.fixed img {
   width: 50%;
 }
 .nosotros div p {
-  font-size: npm(14px, 18px, 20px, 23px, 25px, 3);
+  font-size: 20px;
   color: black;
   text-align: center;
   padding: 30px;
@@ -226,13 +226,15 @@ div.fixed img {
 .productos div.content-prod div {
   border: 1px solid pink;
   width: 300px;
-  height: 500px;
+  height: auto;
   text-align: center;
-  margin-bottom: 35px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
   background-color: pink;
 }
 .productos div.content-prod div img {
-  width: 300px;
+  width: 100%;
+  height: auto;
 }
 .productos div.content-prod div h3 {
   font-size: 17px;
@@ -260,7 +262,7 @@ div.fixed img {
 /*!---CONTACTO---*/
 .contacto p {
   color: black;
-  font-size: npm(14px, 18px, 20px, 23px, 25px, 3);
+  font-size: 20px;
   text-align: center;
   margin-top: 25px;
 }
@@ -362,36 +364,10 @@ footer.redes div iframe {
     font-size: 14px, 18px, 20px, 23px, 25px, 3;
   }
   .nosotros {
-    margin: 0;
+    margin: 0px;
   }
   .nosotros div {
-    margin: 0;
-  }
-  .productos .content-prod {
-    display: flex;
-    justify-content: center;
-    align-items: space-evenly;
-    margin-top: 0;
-  }
-  .productos .content-prod div {
-    width: 301px;
-    height: 500px;
-    margin: 15px 10px;
-  }
-  .productos .content-prod div img {
-    width: 300px;
-  }
-  .productos .content-prod div a img {
-    width: 20px;
-    height: 20px;
-    margin: 10px 8px;
-  }
-  .productos .content-prod div h3,
-  .productos .content-prod div p {
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 2);
-    color: white;
-    font-weight: 400;
-    margin: 10px;
+    margin: 0px;
   }
   .nosotros {
     display: flex;
@@ -448,19 +424,6 @@ footer.redes div iframe {
   }
 }
 @media screen and (max-width: 840px) {
-  .productos .content-prod {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 0px;
-  }
-  .productos .content-prod div {
-    width: 203px;
-    margin: 10px 7px;
-  }
-  .productos .content-prod div img {
-    width: 200px;
-  }
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -484,29 +447,25 @@ footer.redes div iframe {
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 800px) {
+  .productos .content-prod {
+    justify-content: center;
+  }
+  .productos .content-prod div img {
+    width: 55%;
+  }
+}
 @media screen and (max-width: 764px) {
   .hero div.carousel div.carousel-inner div.carousel-item img {
     height: 45%;
   }
   h2.subtitulo {
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 3);
-  }
-  .productos .content-prod {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: nowrap;
-    margin-top: 0px;
-  }
-  .productos .content-prod div {
-    width: 200px;
-  }
-  .productos .content-prod div img {
-    width: 203px;
+    font-size: 23px;
   }
   .destacados div.destacados-cont div {
-    width: 550px;
-    margin: 15px;
+    width: 553px;
+    height: auto;
+    padding-bottom: 25px;
   }
   .destacados div.destacados-cont div img {
     width: 550px;
@@ -515,7 +474,7 @@ footer.redes div iframe {
     align-items: center;
   }
   .destacados div.destacados-cont div a {
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 3);
+    font-size: 20px;
   }
   .envios .envios-cont {
     display: block;
@@ -550,38 +509,42 @@ footer.redes div iframe {
   }
 }
 @media screen and (max-width: 658px) {
-  h2.sbtitulo {
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 4);
-    padding: 10px 20px;
-  }
   .redes div iframe {
     width: 350px !important;
   }
   .destacados div.destacados-cont div {
-    width: 303px;
+    width: 233px;
     height: auto;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   .destacados div.destacados-cont div img {
-    width: 300px;
+    width: 230px;
   }
   .destacados div.destacados-cont div h3 {
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 5);
+    font-size: 20px;
   }
   .destacados div.destacados-cont div a {
-    padding: 7px;
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 3);
+    padding: 8px;
+    font-size: 14px;
+  }
+  .contacto p {
+    font-size: 18px;
+    justify-content: center;
+    padding: 0px 15px;
   }
   .fixed {
     display: none;
   }
   .formulario form div.form-buttons input {
     width: 120px;
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 3);
+    font-size: 18px;
     padding: 7px;
   }
   .nosotros img {
     width: 300px;
+  }
+  .nosotros div p {
+    font-size: 14px;
   }
   .content-grid {
     display: flex;
@@ -594,8 +557,11 @@ footer.redes div iframe {
   }
 }
 @media screen and (max-width: 480px) {
+  h2.subtitulo {
+    font-size: 18px;
+  }
   .new-in .content-grid div img {
-    width: 430px;
+    width: 350px;
   }
   .redes div iframe {
     width: 300px !important;
@@ -610,11 +576,11 @@ footer.redes div iframe {
     width: 296px;
   }
   .destacado .destacados-cont div h3 {
-    font-size: npm(14px, 18px, 20px, 23px, 25px, 2);
+    font-size: 18px;
   }
   .destacado .destacados-cont div a {
     padding: 7px;
-    font-size: 1npm 14px, 18px, 20px, 23px, 25px, 1;
+    font-size: 14px;
   }
   .envios .envios-cont {
     padding: 0px;

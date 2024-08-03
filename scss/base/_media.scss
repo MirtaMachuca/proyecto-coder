@@ -41,50 +41,17 @@
     }
   
     .nosotros {
-      margin: 0;
-  
+      margin: 0px;
       div {
-        margin: 0;
+        margin: 0px;
       }
     }
   
-    .productos {
-      .content-prod {
-        @include flex(flex, center, space-evenly);
-        margin-top: 0;
-  
-        div {
-          width: 301px;
-          height: 500px;
-          margin: 15px 10px;
-  
-          img {
-            width: 300px;
-          }
-  
-          a {
-            img {
-              width: 20px;
-              height: 20px;
-              margin: 10px 8px;
-            }
-          }
-  
-          h3,
-          p {
-            font-size: npm($font-size,2);
-            color: white;
-            font-weight: 400;
-            margin: 10px;
-          }
-        }
-      }
-    }
   
     .nosotros {
       @include flex(flex, center, center);
       flex-direction: column-reverse;
-  
+        
       img {
         margin-bottom: 30px;
       }
@@ -92,6 +59,7 @@
       div {
         width: 100%;
         text-align: justify;
+  
       }
     }
    
@@ -157,25 +125,11 @@
         }
     }
 
+
 }
 
 @media screen and (max-width:840px){
-
-    .productos{
-        .content-prod {
-            display: flex;
-            align-items: center; 
-            justify-content: space-evenly;
-            margin-top: 0px;
-            div{
-                width: 203px;
-                margin: 10px 7px;
-                img{
-                    width: 200px;
-                }
-            }
-        }
-    }
+  
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -202,6 +156,19 @@
     }
    
 }
+
+@media screen and (max-width:800px){
+    .productos {
+        .content-prod {
+        justify-content: center;
+        div {
+            img {
+            width: 55%;
+            }
+        }
+        }
+    }
+}
 @media screen and (max-width:764px){
 
     .hero{
@@ -216,35 +183,22 @@
         }
     }
     h2.subtitulo{
-        font-size: npm($font-size,3);
+        font-size:  nth($font-size, 4);
     }
 
-    .productos{
-        .content-prod {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            flex-wrap: nowrap;
-            margin-top: 0px;
-            div{
-                width: 200px;
-                img{
-                    width: 203px;
-                }
-            }
-        }
-    }
+    
     .destacados{
         div.destacados-cont{
             div{
-                width: 550px;
-                margin: 15px;
+                width: 553px;
+                height: auto; 
+                padding-bottom: 25px; 
                 img{
                     width: 550px;
                     @include flex(flex,center,center);
                 }
                 a{
-                    font-size: npm($font-size,3);
+                    font-size: nth($font-size,3);
                 }
             }
         }
@@ -290,10 +244,9 @@
 
 
 @media screen and (max-width:658px){
-    h2.sbtitulo{
-        font-size: npm($font-size,4);
-        padding: 10px 20px;
-    }
+
+   
+   
     .redes{
         div{
             iframe{
@@ -305,23 +258,30 @@
     .destacados{
         div.destacados-cont{
             div{
-                width: 303px;
+                width: 233px;
                 height: auto;
-                padding-bottom: 15px;
+                padding-bottom: 20px;
                 img{
-                    width: 300px;
+                    width: 230px;
                 }
                 h3{
-                    font-size:npm($font-size,5);
+                    font-size:nth($font-size,3);
                 }
                 a{
-                    padding: 7px;
-                    font-size: npm($font-size,3);
+                    padding: 8px;
+                    font-size: nth($font-size,1);
                 }
             }
         }
     }
-   
+    .contacto{
+        
+        p{
+            font-size:  nth($font-size, 2);
+            justify-content: center;
+            padding: 0px 15px;
+        }
+    }
 
     .fixed{
        display: none;
@@ -332,7 +292,7 @@
             div.form-buttons{
                 input{
                     width: 120px;
-                    font-size: npm($font-size,3);
+                    font-size: nth($font-size,2);
                     padding: 7px;
                 }
             }
@@ -341,6 +301,12 @@
     .nosotros {
         img {
              width: 300px;
+        }
+        div{
+            p{
+                font-size: nth($font-size,1);  
+               
+            }
         }
     }
 
@@ -364,13 +330,16 @@
 
 
 @media screen and (max-width:480px){
+    h2.subtitulo{
+        font-size:  nth($font-size, 2);
+    }
 
 
     .new-in{
         .content-grid{
             div{
                 img{
-                    width: 430px; 
+                    width: 350px; 
                 }
             }
         }
@@ -396,11 +365,11 @@
                     width: 296px;
                 }
                 h3{
-                    font-size:npm($font-size,2);
+                    font-size:nth($font-size,2);
                 }
                 a{
                     padding: 7px;
-                    font-size: 1npm($font-size,1); 
+                    font-size: nth($font-size,1); 
                 }
             }
         }

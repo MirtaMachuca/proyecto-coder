@@ -8,7 +8,7 @@
             div.carousel-caption{
                 h1{
                     color: black;
-                    font-size: npm($font-size,5);
+                    font-size: nth($font-size,4);
                     margin-bottom: 30px;
                     font-weight: 600;
                 }
@@ -33,7 +33,7 @@
                 @include flex(flex,center,center);
             }
             h3{
-                font-size: npm($font-size,5);
+                font-size: nth($font-size,5);
                 color:pink;
                 text-align: center;
                 background-color: black;
@@ -41,7 +41,7 @@
             }
             a{
                 text-decoration: none;
-                font-size: npm($font-size,2);
+                font-size: nth($font-size,2);
                 padding: 10px;
                 background-color: rgb(240, 48, 141);
                 color:white;
@@ -72,14 +72,14 @@
 
             h3{
                 margin: 10px 0px;
-                font-size: npm($font-size,2);
+                font-size: nth($font-size,2);
             }
             img{
                 width: 50px;
                 height: 50px;
             }
             p {
-                font-size: npm($font-size,1);
+                font-size: nth($font-size,1);
                 color: rgb(53, 46, 46);
             }
         }
@@ -148,7 +148,7 @@ div.fixed{
     div{
         width: 50%;
         p{
-            font-size: npm($font-size,3);
+            font-size: nth($font-size,3);
             color: black;
             text-align: center;
             padding: 30px;
@@ -165,12 +165,14 @@ div.fixed{
         div{
             border:1px solid pink;
             width: 300px;
-            height: 500px;
+            height:auto;
             text-align: center;
-            margin-bottom: 35px;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
             background-color: pink;
             img{
-                width: 300px;
+                width: 100%;
+                height: auto;
             }
             h3{
                 font-size: $size-principal;
@@ -202,7 +204,7 @@ div.fixed{
 .contacto{
     p{
         color:black;
-        font-size: npm($font-size,3);
+        font-size: nth($font-size,3);
         text-align: center;
         margin-top:25px;
     }
