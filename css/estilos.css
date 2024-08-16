@@ -11,9 +11,9 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
-h2.subtitulo {
+.subtitulo {
   font-size: 30px;
-  color: #b09477;
+  color: white;
   text-align: center;
   background-color: #000000;
   padding: 10px;
@@ -24,49 +24,51 @@ h2.subtitulo {
 /*!---HEADER---*/
 header {
   background-color: white;
-  padding: 10px;
   top: 0px;
   border: 1px solid black;
 }
-header nav div a img {
+header nav.navbar {
+  padding: 10px;
+}
+header nav.navbar div.container-fluid a.navbar-brand img {
   height: 85px;
   width: 100px;
   margin-left: 15px;
 }
-header nav div .collapse ul.navbar-nav li.nav-item {
+header nav.navbar div.container-fluid .collapse ul.navbar-nav li.nav-item {
   margin: 5px;
 }
-header nav div .collapse ul.navbar-nav li.nav-item a.nav-link {
-  color: rgb(96, 86, 86);
+header nav.navbar div.container-fluid .collapse ul.navbar-nav li.nav-item a.nav-link {
+  color: #000000;
   transition: 1s;
   font-size: 17px;
 }
-header nav div .collapse ul.navbar-nav li.nav-item a.nav-link:hover {
-  color: rgba(250, 203, 226, 0.9098039216);
+header nav.navbar div.container-fluid .collapse ul.navbar-nav li.nav-item a.nav-link:hover {
+  color: #f23d94;
 }
-header nav div .collapse ul.navbar-nav li.nav-item .dropdown-menu li a {
+header nav.navbar div.container-fluid .collapse ul.navbar-nav li.nav-item .dropdown-menu li a {
   color: rgb(96, 86, 86);
   transition: 1s;
 }
-header nav div .collapse ul.navbar-nav li.nav-item .dropdown-menu li a:hover {
-  color: rgba(250, 203, 226, 0.9098039216);
+header nav.navbar div.container-fluid .collapse ul.navbar-nav li.nav-item .dropdown-menu li a:hover {
+  color: #f23d94;
 }
-header nav div .collapse form.d-flex button.btn {
+header nav.navbar div.container-fluid .collapse form.d-flex button.btn {
   color: black;
-  border-color: #b09477;
+  border-color: #f23d94;
   transition: 1s;
 }
-header nav div .collapse form.d-flex button.btn:hover {
-  background-color: rgba(250, 203, 226, 0.9098039216);
+header nav.navbar div.container-fluid .collapse form.d-flex button.btn:hover {
+  background-color: #ffc2d1;
 }
 
 /*!---INICIO---*/
 .hero div.carousel div.carousel-item img {
   height: 450px;
 }
-.hero div.carousel div.carousel-item div.carousel-caption h1 {
+.hero div.carousel div.carousel-item div.carousel-caption p {
   color: black;
-  font-size: 23px;
+  font-size: 20px;
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -77,38 +79,38 @@ header nav div .collapse form.d-flex button.btn:hover {
   justify-content: center;
 }
 .destacados div.destacados-cont div {
-  border: 2px solid pink;
-  width: 653px;
-  height: 780px;
+  border: 2px solid #ffc2d1;
+  width: 30%;
+  height: 100%;
   text-align: center;
   margin: 20px;
-  background-color: black;
+  padding-bottom: 30px;
+  background: linear-gradient(90deg, #f23d94 0%, #f89dc9 100%);
 }
 .destacados div.destacados-cont div img {
-  width: 650px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .destacados div.destacados-cont div h3 {
   font-size: 25px;
-  color: pink;
+  color: white;
   text-align: center;
-  background-color: black;
-  margin: 20px;
+  margin: 15px;
 }
 .destacados div.destacados-cont div a {
   text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  background-color: rgb(240, 48, 141);
-  color: white;
-  border: 2px solid pink;
-  border-radius: 15px;
+  font-size: 16px;
+  padding: 8px 20px;
+  background-color: white;
+  color: #000000;
+  border: 2px solid #f23d94;
+  border-radius: 5px;
   transition: 1s;
 }
 .destacados div.destacados-cont div a:hover {
-  color: #b3a6b0;
+  background-color: #ffc2d1;
 }
 
 .envios {
@@ -130,7 +132,7 @@ header nav div .collapse form.d-flex button.btn:hover {
 }
 .envios .envios-cont div h3 {
   margin: 10px 0px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .envios .envios-cont div img {
   width: 50px;
@@ -188,12 +190,10 @@ div.fixed img {
 }
 
 .grid-img {
-  transition: 1.5s;
+  transition: 1s;
 }
 .grid-img:hover {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(81, 75, 75, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
 }
 
 /*!---NOSOTROS---*/
@@ -210,10 +210,23 @@ div.fixed img {
   width: 50%;
 }
 .nosotros div p {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   text-align: center;
   padding: 30px;
+}
+
+.preguntas-frec .accordion {
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 100px;
+}
+.preguntas-frec .accordion .accordion-button {
+  background-color: #ffc2d1;
+  color: rgba(47, 44, 44, 0.473);
+}
+.preguntas-frec .accordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
 }
 
 /*!---PRODUCTOS---*/
@@ -221,20 +234,28 @@ div.fixed img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 90px;
+  margin: 50px;
 }
 .productos div.content-prod div {
-  border: 1px solid pink;
   width: 300px;
   height: auto;
   text-align: center;
   padding-bottom: 25px;
   margin-bottom: 25px;
-  background-color: pink;
+  background: rgb(242, 61, 148);
+  background: rgb(255, 194, 209);
+  background: linear-gradient(90deg, #f23d94 0%, #f89dc9 100%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+.productos div.content-prod div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 .productos div.content-prod div img {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease-in-out;
 }
 .productos div.content-prod div h3 {
   font-size: 17px;
@@ -255,14 +276,15 @@ div.fixed img {
   height: 25px;
 }
 .productos div.content-prod div p {
+  margin: 5px;
   font-size: 17px;
-  color: rgb(158, 18, 112);
+  color: white;
 }
 
 /*!---CONTACTO---*/
 .contacto p {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   margin-top: 25px;
 }
@@ -279,7 +301,7 @@ div.fixed img {
   width: 600px;
   margin: 15px 0px;
   padding: 20px;
-  background-color: #b09477;
+  background: linear-gradient(90deg, #f23d94 0%, #f89dc9 100%);
   border-radius: 10px;
 }
 .formulario form div {
@@ -309,13 +331,13 @@ div.fixed img {
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
-  border: 1px solid #b09477;
+  border: 1px solid #f23d94;
   color: #000000;
   font-size: 17px;
   transition: 1s;
 }
 .formulario form .form-buttons input:hover {
-  color: rgba(250, 203, 226, 0.9098039216);
+  color: #ffc2d1;
 }
 
 /*!---FOOTER---*/
@@ -345,23 +367,11 @@ footer.redes div iframe {
   .redes div iframe {
     width: 450px;
   }
-  .destacados .destacados-cont div {
-    width: 353px;
-    height: 485px;
-    text-align: center;
-    margin: 10px 15px;
-  }
-  .destacados .destacados-cont div img {
-    width: 349px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
   .envios {
     padding-bottom: 10px;
   }
   .envios .envios-cont div h3 {
-    font-size: 14px, 18px, 20px, 23px, 25px, 3;
+    font-size: 14px, 16px, 18px, 20px, 23px, 25px, 3;
   }
   .nosotros {
     margin: 0px;
@@ -459,22 +469,20 @@ footer.redes div iframe {
   .hero div.carousel div.carousel-inner div.carousel-item img {
     height: 45%;
   }
-  h2.subtitulo {
-    font-size: 23px;
+  h1.subtitulo {
+    font-size: 20px;
   }
   .destacados div.destacados-cont div {
-    width: 553px;
-    height: auto;
     padding-bottom: 25px;
   }
   .destacados div.destacados-cont div img {
-    width: 550px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: space-evenly;
   }
   .destacados div.destacados-cont div a {
-    font-size: 20px;
+    font-size: 14px;
+    padding: 8px;
   }
   .envios .envios-cont {
     display: block;
@@ -517,18 +525,11 @@ footer.redes div iframe {
     height: auto;
     padding-bottom: 20px;
   }
-  .destacados div.destacados-cont div img {
-    width: 230px;
-  }
   .destacados div.destacados-cont div h3 {
-    font-size: 20px;
-  }
-  .destacados div.destacados-cont div a {
-    padding: 8px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .contacto p {
-    font-size: 18px;
+    font-size: 16px;
     justify-content: center;
     padding: 0px 15px;
   }
@@ -537,7 +538,7 @@ footer.redes div iframe {
   }
   .formulario form div.form-buttons input {
     width: 120px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 7px;
   }
   .nosotros img {
@@ -557,8 +558,8 @@ footer.redes div iframe {
   }
 }
 @media screen and (max-width: 480px) {
-  h2.subtitulo {
-    font-size: 18px;
+  h1.subtitulo {
+    font-size: 16px;
   }
   .new-in .content-grid div img {
     width: 350px;
@@ -576,7 +577,7 @@ footer.redes div iframe {
     width: 296px;
   }
   .destacado .destacados-cont div h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .destacado .destacados-cont div a {
     padding: 7px;

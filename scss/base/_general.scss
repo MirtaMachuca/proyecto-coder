@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 //!VARIABLES
-$color-principal:#b09477 ;
-$color-secundario:#facbe2e8;
+$color-principal: #f23d94;
+$color-secundario: #ffc2d1;
 $color-terciario:#000000;
 $size-principal:17px;
 
 
 //!VARIABLES
-$font-size:14px,18px,20px,23px,25px;
+$font-size:14px,16px,18px,20px,23px,25px;
 
 /**---------RESET------*/
 *{
@@ -23,9 +23,9 @@ body{
 }
 
 
-h2.subtitulo{
+.subtitulo{
     font-size: 30px;
-    color:$color-principal;
+    color:white;
     text-align: center;
     background-color: $color-terciario;
     padding: 10px;

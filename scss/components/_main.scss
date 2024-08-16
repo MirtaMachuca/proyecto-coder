@@ -6,7 +6,7 @@
                 height: 450px;
             }
             div.carousel-caption{
-                h1{
+                p{
                     color: black;
                     font-size: nth($font-size,4);
                     margin-bottom: 30px;
@@ -20,36 +20,37 @@
     div.destacados-cont{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;    
+        justify-content: center;  
+         
         div{
-            border:2px solid pink;
-            width: 653px;
-            height: 780px;
+            border:2px solid $color-secundario;
+            width: 30%;
+            height: 100%;
             text-align: center;
             margin: 20px;
-            background-color: black; 
+            padding-bottom: 30px;
+            background: linear-gradient(90deg, $color-principal 0%, lighten($color-principal, 20%) 100%);  
             img{
-                width: 650px;
+                width: 100%;
                 @include flex(flex,center,center);
             }
             h3{
-                font-size: nth($font-size,5);
-                color:pink;
+                font-size: nth($font-size,6);
+                color:white;
                 text-align: center;
-                background-color: black;
-                margin: 20px;
+                margin: 15px;
             }
             a{
                 text-decoration: none;
                 font-size: nth($font-size,2);
-                padding: 10px;
-                background-color: rgb(240, 48, 141);
-                color:white;
-                border: 2px solid pink;
-                border-radius: 15px;
+                padding: 8px 20px;
+                background-color:white;
+                color:$color-terciario;
+                border: 2px solid $color-principal;
+                border-radius: 5px;
                 transition: 1s;
-                &:hover {
-                  color:  #b3a6b0;
+                &:hover{
+                    background-color:$color-secundario;
                 } 
             }
         }
@@ -128,12 +129,12 @@ div.fixed{
 }
 
 .grid-img{
-    transition: 1.5s;
-    &:hover{
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(81, 75, 75, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: 1s;
+    &:hover {
+       
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5);
     }
+  
 }
 /*!---NOSOTROS---*/
 .nosotros{
@@ -155,24 +156,52 @@ div.fixed{
         }
     }
 }
+.preguntas-frec {
+    .accordion {
+        width: 90%; 
+        margin-left: 30px;
+        margin-bottom: 100px;
+
+        .accordion-button{
+            background-color:$color-secundario;
+            color: rgba(47, 44, 44, 0.473) ;
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25);
+            }
+          
+        } 
+         
+    
+    }
+}
 /*!---PRODUCTOS---*/
 .productos{
     div.content-prod{
         display:flex;
         flex-wrap: wrap;
         justify-content: space-between; 
-        margin:90px;
+        margin:50px;
+        
         div{
-            border:1px solid pink;
+           
             width: 300px;
             height:auto;
             text-align: center;
             padding-bottom: 25px;
             margin-bottom: 25px;
-            background-color: pink;
+            background: rgb(242,61,148);
+            background: rgb(255,194,209);
+            background: linear-gradient(90deg, $color-principal 0%, lighten($color-principal, 20%) 100%); 
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            transform-style: preserve-3d;
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            }
             img{
                 width: 100%;
                 height: auto;
+                transition: transform 0.3s ease-in-out;
             }
             h3{
                 font-size: $size-principal;
@@ -194,8 +223,9 @@ div.fixed{
               
            }
            p{
+            margin: 5px;
             font-size: $size-principal;
-            color:rgb(158, 18, 112); 
+            color:white; 
             }
         }
     }
@@ -220,7 +250,7 @@ div.fixed{
         width: 600px;
         margin: 15px 0px;
         padding: 20px;
-        background-color: $color-principal;
+        background: linear-gradient(90deg, $color-principal 0%, lighten($color-principal, 20%) 100%); 
         border-radius: 10px;
         div{
             margin-bottom: 15px;

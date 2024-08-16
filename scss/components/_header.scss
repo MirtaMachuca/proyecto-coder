@@ -1,13 +1,13 @@
 /*!---HEADER---*/
 header {
     background-color: white;
-    padding: 10px;
     top: 0px;
     border: 1px solid black;
   
-    nav {
-      div{
-        a img {
+    nav.navbar {
+      padding: 10px;
+      div.container-fluid{
+        a.navbar-brand img {
           height: 85px;
           width: 100px;
           margin-left: 15px;
@@ -17,11 +17,11 @@ header {
             li.nav-item {
               margin: 5px;
               a.nav-link{
-                color: rgb(96, 86, 86);
+                color: $color-terciario;
                 transition: 1s;
                 font-size:$size-principal;
                 &:hover {
-                  color: $color-secundario;
+                  color: $color-principal;
                 }
               }
               .dropdown-menu{
@@ -30,7 +30,7 @@ header {
                     color: rgb(96, 86, 86);
                     transition:1s;
                     &:hover {
-                      color:  $color-secundario;
+                      color:  $color-principal;
                     }
                   }
                 }

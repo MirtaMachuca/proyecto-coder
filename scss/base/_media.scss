@@ -10,24 +10,6 @@
         }
     } 
   
-    .destacados {
-      .destacados-cont {
-        div {
-          width: 353px;
-          height: 485px;
-          text-align: center;
-          margin: 10px 15px;
-  
-          img {
-            width: 349px;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-          }
-        }
-      }
-    }
-  
     .envios {
       padding-bottom: 10px;
   
@@ -182,7 +164,7 @@
             }
         }
     }
-    h2.subtitulo{
+    h1.subtitulo{
         font-size:  nth($font-size, 4);
     }
 
@@ -190,15 +172,13 @@
     .destacados{
         div.destacados-cont{
             div{
-                width: 553px;
-                height: auto; 
                 padding-bottom: 25px; 
                 img{
-                    width: 550px;
-                    @include flex(flex,center,center);
+                    @include flex(flex,center,space-evenly);
                 }
                 a{
-                    font-size: nth($font-size,3);
+                    font-size: nth($font-size,1);
+                    padding: 8px;
                 }
             }
         }
@@ -261,16 +241,11 @@
                 width: 233px;
                 height: auto;
                 padding-bottom: 20px;
-                img{
-                    width: 230px;
-                }
+              
                 h3{
                     font-size:nth($font-size,3);
                 }
-                a{
-                    padding: 8px;
-                    font-size: nth($font-size,1);
-                }
+             
             }
         }
     }
@@ -330,7 +305,7 @@
 
 
 @media screen and (max-width:480px){
-    h2.subtitulo{
+    h1.subtitulo{
         font-size:  nth($font-size, 2);
     }
 
