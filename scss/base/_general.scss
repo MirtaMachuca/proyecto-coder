@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 //!VARIABLES
-$color-principal: #f23d94;
+$color-principal: rgb(255,102,178);
 $color-secundario: #ffc2d1;
 $color-terciario:#000000;
 $size-principal:17px;
@@ -32,9 +32,12 @@ body{
     margin-bottom: 25px;
     font-weight: 350;
 }
-
-
-
+//!extends
+%img{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 //!mixins
 @mixin flex($flex,$justify,$aling){

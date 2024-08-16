@@ -29,7 +29,8 @@
             text-align: center;
             margin: 20px;
             padding-bottom: 30px;
-            background: linear-gradient(90deg, $color-principal 0%, lighten($color-principal, 20%) 100%);  
+            background: $color-principal;
+background: linear-gradient(90deg, rgba(255,102,178,1) 0%, rgba(255,131,192,1) 35%, rgba(243,155,198,1) 82%);  
             img{
                 width: 100%;
                 @include flex(flex,center,center);
@@ -189,9 +190,8 @@ div.fixed{
             text-align: center;
             padding-bottom: 25px;
             margin-bottom: 25px;
-            background: rgb(242,61,148);
-            background: rgb(255,194,209);
-            background: linear-gradient(90deg, $color-principal 0%, lighten($color-principal, 20%) 100%); 
+            background: $color-principal;
+            background: linear-gradient(90deg, rgba(255,102,178,1) 0%, rgba(255,131,192,1) 35%, rgba(243,155,198,1) 82%);
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             transform-style: preserve-3d;
             &:hover {
@@ -250,21 +250,18 @@ div.fixed{
         width: 600px;
         margin: 15px 0px;
         padding: 20px;
-        background: linear-gradient(90deg, $color-principal 0%, lighten($color-principal, 20%) 100%); 
+        background: $color-principal;
+        background: linear-gradient(90deg, rgba(255,102,178,1) 0%, rgba(255,131,192,1) 35%, rgba(243,155,198,1) 82%);
         border-radius: 10px;
         div{
             margin-bottom: 15px;
             input{
-                width: 100%;
                 padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
+                @extend %img;
             }
         }
         textarea{
-            width: 100%;
-            border:1px solid #ccc;
-            border-radius:5px;
+            @extend %img;
         }
         .form-buttons{
             display: flex;

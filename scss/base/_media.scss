@@ -164,7 +164,7 @@
             }
         }
     }
-    h1.subtitulo{
+    .subtitulo{
         font-size:  nth($font-size, 4);
     }
 
@@ -305,7 +305,7 @@
 
 
 @media screen and (max-width:480px){
-    h1.subtitulo{
+    .subtitulo{
         font-size:  nth($font-size, 2);
     }
 
